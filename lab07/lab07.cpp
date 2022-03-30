@@ -198,14 +198,14 @@ int DeleteSame(STACK* stack)
 			}
 		}
 	}
-	return point;
+	return point;           
 }
 
 void DeleteSameHelp(STACK* stack, int point)
 {
 	STACK* sthead1 = stack->head;
 	for (int k = 0; k < point - 1; k++)
-		sthead1 = sthead1->next;
+		sthead1 = sthead1->next;//говно-код
 
 	sthead1->next = sthead1->next->next;
 }
